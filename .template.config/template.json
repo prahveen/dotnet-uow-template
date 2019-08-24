@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Prahveen Thiruchelvam",
+  "classifications": [ "WebApi UOFs" ], 
+  "name": "UOF Pattern Web API Template",
+  "identity": "Template.CSharp",         
+  "groupIdentity":"Template",
+  "shortName": "webuow",
+  "tags": {
+    "language": "C#",
+    "type":"project"
+  },
+  "sourceName": "Template",
+  "preferNameDirectory": true,
+  "symbols":{
+    "includetest": {
+        "type": "parameter",
+        "datatype": "bool",
+        "defaultValue": "true"
+    }
+  }
+}
