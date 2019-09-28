@@ -5,9 +5,9 @@ using System.Text;
 
 namespace Template.Entities.Entities.Mapping
 {
-   public class SearchKeywordMap
+   public class DefaultEntitiyMap
     {
-        public SearchKeywordMap(EntityTypeBuilder<SearchKeyword> entityBuilder)
+        public DefaultEntitiyMap(EntityTypeBuilder<DefaultEntitiy> entityBuilder)
         {
             entityBuilder.HasKey(a => a.ID);
             entityBuilder.Property(a => a.Name).IsRequired();

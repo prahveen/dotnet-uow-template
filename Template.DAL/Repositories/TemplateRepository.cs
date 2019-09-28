@@ -9,7 +9,7 @@ using System.Text;
 
 namespace Template.DAL.Repositories
 {
-   public class TemplateRepository : BaseEntityRepository<SearchKeyword>, ITemplateRepository
+   public class TemplateRepository : BaseEntityRepository<DefaultEntitiy>, ITemplateRepository
     {
         private new ApplicationDbContext _context;
         public TemplateRepository(ApplicationDbContext context) : base(context)
@@ -25,11 +25,11 @@ namespace Template.DAL.Repositories
             }
         }
 
-        public SearchKeyword GetSingleByName(string name)
+        public DefaultEntitiy GetSingleByName(string name)
         {
             try
             {
-                return _context.Set<SearchKeyword>().FirstOrDefault(x => x.Name == name);
+                return _context.Set<DefaultEntitiy>().FirstOrDefault(x => x.Name == name);
             }
             catch (Exception ex)
             {

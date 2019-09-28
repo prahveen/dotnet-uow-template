@@ -1,6 +1,6 @@
 ﻿namespace Template.DTO.DTOLibrary
 {
-    public class SearchKeywordDTO : BaseDTO
+    public class DefaultDTO : BaseDTO
     {
         public string Name { get; set; }
         public string OldStatus { get; set; }

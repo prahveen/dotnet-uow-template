@@ -8,7 +8,7 @@ namespace Template.DTO.MappingProfiles
     {
         public DomainToDTOMapping()
         {
-            CreateMap<SearchKeyword, SearchKeywordDTO>();
+            CreateMap<DefaultEntitiy, DefaultDTO>();
         }
        
     }

@@ -6,8 +6,8 @@ using System.Text;
 
 namespace Template.DAL.Repositories.Abstract
 {
-   public interface ITemplateRepository : IBaseEntityRepository<SearchKeyword>
+   public interface ITemplateRepository : IBaseEntityRepository<DefaultEntitiy>
     {
-        SearchKeyword GetSingleByName(string name);
+        DefaultEntitiy GetSingleByName(string name);
     }
 }

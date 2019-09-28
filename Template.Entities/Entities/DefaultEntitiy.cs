@@ -1,6 +1,6 @@
 ﻿namespace Template.Entities.Entities
 {
-    public class SearchKeyword :BaseEntity
+    public class DefaultEntitiy :BaseEntity
     {
         public string Name { get; set; }
         public string OldStatus { get; set; }

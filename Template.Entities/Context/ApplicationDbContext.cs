@@ -15,9 +15,9 @@ namespace Template.Entities.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            new SearchKeywordMap(modelBuilder.Entity<SearchKeyword>());
+            new DefaultEntitiyMap(modelBuilder.Entity<DefaultEntitiy>());
             modelBuilder.Entity<BaseEntity>().Property(p => p.RowVersion).IsConcurrencyToken().IsRequired().IsRowVersion();
         }
-        public DbSet<SearchKeyword> SearchKeywords { get; set; }
+        public DbSet<DefaultEntitiyMap> SearchKeywords { get; set; }
     }
 }
